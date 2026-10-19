@@ -1,0 +1,42 @@
+{
+  "name": "game-crash-doctor",
+  "version": "0.1.0",
+  "description": "DeepSeek Harness plugin: explain Windows game crashes from Event Log, WER reports and crash dumps.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "game-crash",
+    "windows",
+    "diagnostics",
+    "wer",
+    "event-log"
+  ],
+  "license": "MIT",
+  "os": [
+    "win32"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

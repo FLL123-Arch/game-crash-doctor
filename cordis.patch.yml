@@ -1,0 +1,12 @@
+# dsh bundle patch: inserts this plugin into a profile's layer stack.
+#
+# Optional configuration (uncomment under the entry):
+#   config:
+#     notify: true              # push a notice into the chat when a new crash is seen
+#     pollSeconds: 45           # watcher interval
+#     gameOnly: true            # only notify for game-like crashes
+#     notifyAllSessions: false  # notify every open chat instead of the newest one
+#     maxNotificationsPerHour: 3
+- insert:
+    - id: game-crash-doctor
+      name: game-crash-doctor
